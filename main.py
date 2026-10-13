@@ -1,4 +1,5 @@
 from modulo import *
+from time import sleep as tp
 
 def main():
     while True:
@@ -34,7 +35,8 @@ def main():
                 if c == 9:
                     print('O JOGO DEU EMPATE')
                     break
-                    
+
+                tp(0.7) #tempo de raciocinio antes da vez do outro jogador    
                 player = 'O' 
                 while True:
                     posicao = receber_jogada(player)
@@ -74,8 +76,9 @@ def main():
                     break
                 if c == 9:
                     print('O JOGO DEU EMPATE')
-                    break    
-                
+                    break 
+   
+                tp(0.7)
                 player = 'O'
                 print('Vez da Maquina Jogar')
                 Tabuleiro = jogada_maquina(tabuleiro, player) # Jogada da Maquina
