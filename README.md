@@ -1,6 +1,6 @@
 # Jogo da Velha em Python
 
-Um projeto clássico de **Jogo da Velha (Tic-Tac-Toe)** desenvolvido em Python, executado diretamente pelo terminal/console. Permite partidas locais para dois jogadores ou contra uma inteligência artificial simples.
+Um projeto clássico de **Jogo da Velha (Tic-Tac-Toe)** desenvolvido em Python, executado diretamente pelo terminal/console. Permite partidas locais para dois jogadores ou contra uma inteligência artificial simples, contando com pausas entre turnos para tornar a dinâmica do jogo mais natural.
 
 ---
 
@@ -8,6 +8,7 @@ Um projeto clássico de **Jogo da Velha (Tic-Tac-Toe)** desenvolvido em Python, 
 
 - **Modo de Jogo 1:** Jogar com um amigo (Dois jogadores no mesmo computador: Player 1 `X` contra Player 2 `O`).
 - **Modo de Jogo 2:** Jogar contra a máquina (O jogador `X` enfrenta jogadas aleatórias automáticas da máquina `O`).
+- **Ritmo de Jogo Pacing/Temporizado:** Utiliza pausas (`sleep`) de 0,7 segundos entre as jogadas para proporcionar um tempo de transição mais fluido e realista.
 - **Validação de Jogadas:** O sistema verifica se a posição escolhida (1 a 9) é válida, se está dentro do tabuleiro e se já não foi ocupada.
 - **Detecção Automática:** Identifica automaticamente linhas, colunas ou diagonais vencedoras, além de detectar empates (velha).
 - **Opção de Reinício:** Permite reiniciar uma nova partida após o término do jogo ou encerrar a execução.
@@ -17,7 +18,9 @@ Um projeto clássico de **Jogo da Velha (Tic-Tac-Toe)** desenvolvido em Python, 
 ## Tecnologias Utilizadas
 
 - **Python 3.x**
-- Biblioteca padrão `random` (utilizada para gerar as jogadas da máquina).
+- Módulos nativos do Python:
+  - `random` (utilizado para gerar as jogadas aleatórias da máquina)
+  - `time` (função `sleep` utilizada para adicionar o intervalo entre os turnos)
 
 ---
 
@@ -26,8 +29,8 @@ Um projeto clássico de **Jogo da Velha (Tic-Tac-Toe)** desenvolvido em Python, 
 O projeto está dividido em dois arquivos principais:
 
 ```text
-├── main.py # Arquivo principal que gerencia o fluxo do jogo e o loop das partidas
-└── modulo.py # Contém as funções lógicas, validações, renderização e regras do jogo
+├── tabuleiro.py         # Arquivo principal que gerencia o fluxo do jogo e o loop das partidas
+└── funcoes_tabuleiro.py # Contém as funções lógicas, validações, renderização e regras do jogo
 ```
 
 ---
@@ -41,12 +44,12 @@ Para executar este projeto, você precisa ter instalado em sua máquina:
 
 ## Como Executar
 
-1. Certifique-se de que os arquivos `main.py` e `modulo.py` estão na mesma pasta.
+1. Certifique-se de que os arquivos `tabuleiro.py` e `funcoes_tabuleiro.py` estão na mesma pasta.
 2. Abra o terminal (ou prompt de comando) na pasta onde os arquivos estão salvos.
 3. Execute o comando abaixo:
 
 ```bash
-python main.py
+python tabuleiro.py
 ```
 
 ---
@@ -62,9 +65,9 @@ Ao iniciar o programa, o menu principal será exibido:
 Tabuleiro
 ----------------------------------------
                  1 | 2 | 3                
-             -----------------
+             ---------
                  4 | 5 | 6                
-             -----------------
+             ---------
                  7 | 8 | 9                
 ----------------------------------------
 [ 1 ] Jogar com Amigo
