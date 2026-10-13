@@ -1,4 +1,4 @@
-from funcoes_tabuleiro import *
+from modulo import *
 
 def main():
     while True:
