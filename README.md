@@ -26,7 +26,7 @@ Um projeto clássico de **Jogo da Velha (Tic-Tac-Toe)** desenvolvido em Python, 
 O projeto está dividido em dois arquivos principais:
 
 ```text
-├── main.py         # Arquivo principal que gerencia o fluxo do jogo e o loop das partidas
+├── main.py # Arquivo principal que gerencia o fluxo do jogo e o loop das partidas
 └── modulo.py # Contém as funções lógicas, validações, renderização e regras do jogo
 ```
 
@@ -62,9 +62,9 @@ Ao iniciar o programa, o menu principal será exibido:
 Tabuleiro
 ----------------------------------------
                  1 | 2 | 3                
-             ---------
+             -----------------
                  4 | 5 | 6                
-             ---------
+             -----------------
                  7 | 8 | 9                
 ----------------------------------------
 [ 1 ] Jogar com Amigo
