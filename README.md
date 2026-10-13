@@ -29,8 +29,8 @@ Um projeto clássico de **Jogo da Velha (Tic-Tac-Toe)** desenvolvido em Python, 
 O projeto está dividido em dois arquivos principais:
 
 ```text
-├── tabuleiro.py         # Arquivo principal que gerencia o fluxo do jogo e o loop das partidas
-└── funcoes_tabuleiro.py # Contém as funções lógicas, validações, renderização e regras do jogo
+├── main.py # Arquivo principal que gerencia o fluxo do jogo e o loop das partidas
+└── modulo.py # Contém as funções lógicas, validações, renderização e regras do jogo
 ```
 
 ---
@@ -44,12 +44,12 @@ Para executar este projeto, você precisa ter instalado em sua máquina:
 
 ## Como Executar
 
-1. Certifique-se de que os arquivos `tabuleiro.py` e `funcoes_tabuleiro.py` estão na mesma pasta.
+1. Certifique-se de que os arquivos `main.py` e `modulo.py` estão na mesma pasta.
 2. Abra o terminal (ou prompt de comando) na pasta onde os arquivos estão salvos.
 3. Execute o comando abaixo:
 
 ```bash
-python tabuleiro.py
+python main.py
 ```
 
 ---
@@ -65,9 +65,9 @@ Ao iniciar o programa, o menu principal será exibido:
 Tabuleiro
 ----------------------------------------
                  1 | 2 | 3                
-             ---------
+             -----------------
                  4 | 5 | 6                
-             ---------
+             -----------------
                  7 | 8 | 9                
 ----------------------------------------
 [ 1 ] Jogar com Amigo
